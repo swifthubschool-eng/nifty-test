@@ -75,7 +75,7 @@ export async function POST(request: NextRequest) {
       {
         success: false,
         error: "Failed to login",
-        details: process.env.NODE_ENV === "development" ? error.message : undefined,
+        details: error.message,
       },
       { status: 500 }
     );
