@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
       {
         success: false,
         error: "Failed to create account",
-        details: process.env.NODE_ENV === "development" ? error.message : undefined,
+        details: error.message,
       },
       { status: 500 }
     );
