@@ -7,7 +7,11 @@ const port = 3001;
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
-    origin: "*", 
+    origin: [
+      "http://localhost:3000",
+      "https://nifty-test-2.vercel.app",
+      "https://nifty-test-2-cq10kjrai-swifthubschool-engs-projects.vercel.app"
+    ],
     methods: ["GET", "POST"]
   }
 });
