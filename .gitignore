@@ -1,0 +1,39 @@
+# Unrelated Folders to Ignore
+Python interview/
+Python interview (2)/
+resume extractor/
+stock market project/
+stock2/
+TASK BEFORE/
+venv/
+.venv/
+chatbot.py
+
+# Global Binary/Junk Ignores
+*.zip
+*.rar
+*.7z
+*.log
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# Node/Next.js/Env Ignores (Root & Subdirectories)
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+.env
+.env.*
+.vercel/
+
+# Specific Stockmarket Ignores (Redundant but safe)
+stockmarket/node_modules/
+stockmarket/.next/
+stockmarket/out/
+stockmarket/build/
+stockmarket/.env
+stockmarket/.env.*
+stockmarket/.vercel/
