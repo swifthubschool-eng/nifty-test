@@ -3,7 +3,7 @@ const { Server } = require("socket.io");
 const { createServer } = require("http");
 require("dotenv").config();
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 const httpServer = createServer();
 const io = new Server(httpServer, {
   cors: {
